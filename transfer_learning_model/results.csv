@@ -1,0 +1,13 @@
+,Image,Results
+0,test_fire_1.jpeg,"fire (score=0.99918)
+no fire (score=0.00082)
+"
+1,test_fire_2.jpeg,"fire (score=0.52740)
+no fire (score=0.47260)
+"
+2,test_no_fire_1.jpg,"no fire (score=0.99999)
+fire (score=0.00001)
+"
+3,test_no_fire_2.jpg,"no fire (score=0.99700)
+fire (score=0.00300)
+"
