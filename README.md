@@ -35,3 +35,23 @@ Fire detection is a problem that people have been trying to solve for a longtime
 `transfer_learning_model/results.ipynb`: Pre-processing the testing images dataset to get them ready for finally running into test.py
 
 `transfer_learning_model/test.py`: Script to get the output of model on a different testing directories
+
+## Data Source
+
+For the data source we have decided to use the following [repositrory](https://github.com/cair/Fire-Detection-Image-Dataset).
+This image dataset contains images of three different classes:
+
+- Neutral
+- Smoke
+- Fire
+
+For the purpose of this assignment we only kept two classes: `Fire` and `Neutral`. 
+Originally this dataset in unbalanced but we decided to make it balanced. Before the preprocessing step we accumulated 1000 images for each class. 
+
+In order to obtain a larger dataset and better results we have decided to apply some data augmentaion:
+
+- Crop images to 150 by 150px
+- Mirror the images
+- Rotate images
+
+That allowed us to increase the count of the images in each class to be 8000. 6000 images of each class would be Training and 2000 Testing. 
